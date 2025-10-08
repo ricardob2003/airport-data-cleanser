@@ -75,9 +75,17 @@ The distance represents the shortest path between two airports "as the crow flie
 ## Installation
 
 1. Clone or download this repository
-2. Install required dependencies:
+2. Install Pipenv if you haven't already:
     ```bash
-    pip install pandas numpy
+    pip install pipenv
+    ```
+3. Install dependencies using Pipenv:
+    ```bash
+    pipenv install
+    ```
+4. Activate the virtual environment:
+    ```bash
+    pipenv shell
     ```
 
 ## Usage
@@ -90,6 +98,12 @@ The distance represents the shortest path between two airports "as the crow flie
 2. Run the script:
 
     ```bash
+    pipenv run python scraper.py
+    ```
+
+    Or if you've activated the virtual environment with `pipenv shell`:
+
+    ```bash
     python scraper.py
     ```
 
@@ -99,9 +113,13 @@ The distance represents the shortest path between two airports "as the crow flie
 
 ## Dependencies
 
+This project uses Pipenv for dependency management. Dependencies are defined in the `Pipfile`:
+
 -   Python 3.x
 -   pandas
 -   numpy
+
+All dependencies will be automatically installed when you run `pipenv install`.
 
 ## Use Cases
 
